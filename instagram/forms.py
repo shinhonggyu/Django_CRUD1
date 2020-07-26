@@ -14,4 +14,4 @@ class PostForm(forms.ModelForm):  # 모델폼 설계
         message = self.cleaned_data.get('message')
         if message:
             message = re.sub(r'[a-zA-Z]+', '', message)
-        return messag
+        return message
